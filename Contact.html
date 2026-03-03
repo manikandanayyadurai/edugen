@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact | EduManage</title>
+
+<style>
+body{
+  font-family:Segoe UI;
+  background:linear-gradient(135deg,#1b6ca8,#0f4c81);
+  color:white;
+  text-align:center;
+  padding:80px;
+}
+
+form{
+  width:400px;
+  margin:auto;
+  animation:slideUp 1s ease;
+}
+
+input,textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border:none;
+  border-radius:8px;
+}
+
+button{
+  padding:12px 20px;
+  background:#ff7a00;
+  border:none;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+@keyframes slideUp{
+  from{transform:translateY(50px);opacity:0}
+  to{transform:translateY(0);opacity:1}
+}
+</style>
+</head>
+
+<body>
+
+<h1>Contact Us</h1>
+
+<form id="contactForm">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+<br>
+<a href="Home.html" style="color:white;">⬅ Back to Home</a>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit",function(e){
+e.preventDefault();
+alert("Message Sent Successfully!");
+});
+</script>
+
+</body>
+</html>

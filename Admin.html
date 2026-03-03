@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{margin:0;font-family:Segoe UI;background:#eef3f9;}
+.sidebar{
+  width:230px;height:100vh;position:fixed;
+  background:linear-gradient(180deg,#0f4c81,#1b6ca8);
+  padding-top:30px;color:white;
+  animation:slideIn 0.8s ease;
+}
+.sidebar a{
+  display:block;color:white;text-decoration:none;
+  padding:15px 25px;transition:0.3s;
+}
+.sidebar a:hover{
+  background:rgba(255,255,255,0.2);
+  padding-left:35px;
+}
+.content{margin-left:230px;padding:40px;}
+.header{
+  font-size:28px;color:#0f4c81;
+  margin-bottom:30px;
+}
+.cards{
+  display:flex;gap:20px;flex-wrap:wrap;
+}
+.card{
+  background:white;padding:30px;
+  flex:1;border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  transition:0.4s;
+}
+.card:hover{
+  transform:translateY(-10px);
+}
+.card h2{color:#ff7a00;}
+.approval{
+  margin-top:40px;background:white;
+  padding:30px;border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+button{
+  padding:8px 15px;border:none;
+  border-radius:8px;margin-right:10px;
+  cursor:pointer;
+}
+.approve{background:#28a745;color:white;}
+.reject{background:#dc3545;color:white;}
+
+@keyframes slideIn{
+  from{transform:translateX(-100%);}
+  to{transform:translateX(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2 style="text-align:center;">Admin</h2>
+<a href="#">Dashboard</a>
+<a href="#">Manage Students</a>
+<a href="#">Academic Calendar</a>
+<a href="#">Club Approvals</a>
+<a href="#">Reports</a>
+<a href="Home.html">Logout</a>
+</div>
+
+<div class="content">
+<div class="header">System Overview</div>
+
+<div class="cards">
+<div class="card">
+<h2>5000+</h2>
+<p>Total Students</p>
+</div>
+<div class="card">
+<h2>320</h2>
+<p>Upcoming Exams</p>
+</div>
+<div class="card">
+<h2>18</h2>
+<p>Pending Approvals</p>
+</div>
+</div>
+
+<div class="approval">
+<h3>Pending Club Event</h3>
+<p>AI Workshop - Submitted by Coding Club</p>
+<button class="approve">Approve</button>
+<button class="reject">Reject</button>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #0f4c81;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #ff7a00;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white !important;
+}
+
+.btn-outline {
+    border: 1px solid white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    background: linear-gradient(to right, #0f4c81, #1b6ca8);
+    color: white;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+    width: 400px;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    background: white;
+}
+
+.feature-card {
+    width: 30%;
+    padding: 30px;
+    background: #f1f1f1;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+.about-image img {
+    width: 350px;
+    margin-right: 40px;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background: #e3f2fd;
+}
+
+.stat h2 {
+    font-size: 32px;
+    color: #0f4c81;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px;
+    text-align: center;
+    background: white;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: #0f4c81;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
